@@ -1,0 +1,23 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic);
+
+body, html, h1, h2, h3, h4, h5, h6, ul, p{
+	padding: 0px;
+	margin: 0px;
+	font-family: Lato;
+
+}
+
+body {
+	background: #efefef;
+}
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+.main-wrapper {
+	text-align: center;
+	padding-top: 25px;
+}
