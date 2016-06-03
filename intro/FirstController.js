@@ -1,42 +1,49 @@
 'use strict';
 
 angular.module('angularService')
-    .controller('FirstCtrl', function ($scope, ourSvc) {
+    .controller('FirstCtrl', function ($scope,ourSvc) {
 
-     $scope.reallyLike = ourSvc.reallyLike;
+    $scope.artists = ourSvc.artistsFromService;
 
-        $scope.addArtist = function() {
-            var artist =  buildArtist();
-            ourSvc.addNewArtist(artist);
-            clearInputField()
-        };
+     $scope.addArtist = function(){
+         ourSvc.addArtistFromService(createArtistObj());
+         clearForm();
 
+     };
 
-
-        function buildArtist(){
-            return{
+        function createArtistObj(){
+            return {
                 name: $scope.artist,
                 genre: $scope.genre,
-                rating: $scope.rating
+                count: $scope.count
             }
         }
 
-        function clearInputField() {
-             $scope.artist = "";
-             $scope.genre = "";
-             $scope.rating = "";
 
+        function clearForm() {
+            $scope.artist = '';
+            $scope.genre = '';
+            $scope.count = '';
         }
 
 
+        // Add a time property so you can sort the list by most recent
+        // Add a delete button to each card
+        // Add archive button to each card
 
 
+        //$scope.items = [];
+        //
+        //$scope.$watch('inputData', function() {
+        //   var newItem = $scope.inputData;
+        //   if(newItem && newItem[newItem.length -1] == ',') {
+        //      var withOutComma = newItem.substring(0, newItem.length -1);
+        //      $scope.items.push(withOutComma);
+        //      $scope.inputData = '';
+        //   }
+        //});
 
 
-
-
-
-// index.html, app.js, mainCtrl and mainSrv
 
 
    // We can tap into the digest cycle by using the $watch because under
@@ -46,14 +53,7 @@ angular.module('angularService')
 
 
 
-   //$scope.$watch('inputData', function() {
-   //   var newItem = $scope.inputData;
-   //   if(newItem && newItem[newItem.length -1] == ',') {
-   //      var withOutComma = newItem.substring(0, newItem.length -1);
-   //      $scope.items.push(withOutComma);
-   //      $scope.inputData = '';
-   //   }
-   //});
+
 
 
 

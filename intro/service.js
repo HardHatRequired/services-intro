@@ -1,14 +1,13 @@
 angular.module('angularService').service('ourSvc', function(){
 
-    this.reallyLike = [];
+    this.artistsILike = [];
+    this.artistsIKindOfLike = [];
 
-    this.addNewArtist = function(artistObj){
-       this.reallyLike.push(
-           {
-               name: artistObj.name,
-               genre: artistObj.genre,
-               rating: artistObj.rating
-           });
+
+    this.addArtistFromService = function(obj) {
+        this.artistsFromService.push(obj);
+
     };
 
+    
 });

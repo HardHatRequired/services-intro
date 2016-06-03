@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html ng-app="angularService">
 <head>
-
   <title>Angular Service</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,38 +12,58 @@
   <main class="main-wrapper" ng-controller="FirstCtrl">
 
     <form>
-    <input type="text" ng-model="artist" placeholder="artist">
-    <input type="text" ng-model="genre" placeholder="genre">
-    <input type="text" ng-model="rating" placeholder="rating">
-    <button ng-click="addArtist()"> Add Artist</button>
+      <input type="text" ng-model="artist">
+      <input type="text" ng-model="genre">
+      <input type="text" ng-model="count">
+
+      <button ng-click="addArtist()">Add the artist</button>
     </form>
 
+    <section ng-repeat="artist in artists">
+      {{artist.name}}
+      {{artist.genre}}
+      {{artist.count}}
 
 
-
-
-
-
-
-
-
-
-
-
-    <section>
-      <div ng-repeat="artist in reallyLike">
-        <h1>Really Like</h1>
-        {{artist.name}}
-        {{artist.genre}}
-        {{artist.rating}}
-      </div>
-      <div ng-repeat="artist in kindOfLike">
-        <h1>Kind of Like</h1>
-        {{artist.name}}
-        {{artist.genre}}
-        {{artist.rating}}
-      </div>
     </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--<form>-->
+    <!--<input type="text" ng-model="artist" placeholder="artist">-->
+    <!--<input type="text" ng-model="genre" placeholder="genre">-->
+    <!--<input type="text" ng-model="rating" placeholder="rating">-->
+    <!--<button ng-click="addArtist()"> Add Artist</button>-->
+    <!--</form>-->
+
+
+
+    <!--<section>-->
+      <!--<div ng-repeat="artist in reallyLike">-->
+        <!--<h1>Really Like</h1>-->
+        <!--{{artist.name}}-->
+        <!--{{artist.genre}}-->
+        <!--{{artist.rating}}-->
+      <!--</div>-->
+      <!--<div ng-repeat="artist in kindOfLike">-->
+        <!--<h1>Kind of Like</h1>-->
+        <!--{{artist.name}}-->
+        <!--{{artist.genre}}-->
+        <!--{{artist.rating}}-->
+      <!--</div>-->
+    <!--</section>-->
+
+
 
 
 
@@ -61,11 +80,10 @@
 
   </main>
 
-  <script src="./angular.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
   <script src="app.js"></script>
   <script src="FirstController.js"></script>
   <script src="service.js"></script>
-
 
   </body>
 </html>
