@@ -31,24 +31,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="service.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="service.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/finishedCode/service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4008439">
-              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/intro/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.9636364">
-              <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
-              <folding>
-                <marker date="1464918398000" expanded="true" signature="1084:1839" placeholder="..." />
-              </folding>
+            <state vertical-scroll-proportion="0.27743903">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -105,8 +103,8 @@
         <option value="$PROJECT_DIR$/intro/FirstController.js" />
         <option value="$PROJECT_DIR$/intro/styles/style.css" />
         <option value="$PROJECT_DIR$/intro/service.js" />
-        <option value="$PROJECT_DIR$/intro/index.html" />
         <option value="$PROJECT_DIR$/finishedCode/service.js" />
+        <option value="$PROJECT_DIR$/intro/index.html" />
       </list>
     </option>
   </component>
@@ -350,16 +348,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/intro/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.9636364">
-          <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
-          <folding>
-            <marker date="1464918398000" expanded="true" signature="1084:1839" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/finishedCode/FirstController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -370,8 +358,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/finishedCode/service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4008439">
-          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/intro/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27743903">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>

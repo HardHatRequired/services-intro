@@ -13,7 +13,7 @@ myApp.service('ourSvc', function() {
             this.kindOfLike.push(artistObj);
 
         }
-        
+
     };
 
 });
