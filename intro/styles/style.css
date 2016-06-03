@@ -21,3 +21,10 @@ html {
 	text-align: center;
 	padding-top: 25px;
 }
+
+.slide-out {
+	position: absolute;
+	height: 100vh;
+	width: 33%;
+	background: #000;
+}

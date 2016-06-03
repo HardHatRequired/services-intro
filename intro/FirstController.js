@@ -3,8 +3,12 @@
 angular.module('angularService')
     .controller('FirstCtrl', function ($scope,ourSvc) {
 
-    $scope.artists = ourSvc.artistsFromService;
+    // This is from the service to the view
+    $scope.artistsIlike = ourSvc.artistsILike;
+    $scope.artistsIKindOfLike = ourSvc.artistsIKindOfLike;
 
+
+     /// This is to the service
      $scope.addArtist = function(){
          ourSvc.addArtistFromService(createArtistObj());
          clearForm();

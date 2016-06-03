@@ -19,13 +19,27 @@
       <button ng-click="addArtist()">Add the artist</button>
     </form>
 
-    <section ng-repeat="artist in artists">
-      {{artist.name}}
-      {{artist.genre}}
-      {{artist.count}}
-
-
+    <section ng-show="artistsIlike.length">
+      <h1>I like</h1>
+      <section ng-repeat="artist in artistsIlike" >
+        {{artist.name}}
+        {{artist.genre}}
+        {{artist.count}}
+      </section>
     </section>
+
+    <section ng-if="artistsIKindOfLike.length">
+      <h1>Kind of like</h1>
+
+      <section ng-repeat="artist in artistsIKindOfLike" >
+        {{artist.name}}
+        {{artist.genre}}
+        {{artist.count}}
+      </section>
+    </section>
+
+
+
 
 
 
