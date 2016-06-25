@@ -4,8 +4,9 @@ angular.module('angularService')
     .controller('FirstCtrl', function ($scope,ourSvc) {
 
     // This is from the service to the view
-    $scope.artistsIlike = ourSvc.artistsILike;
-    $scope.artistsIKindOfLike = ourSvc.artistsIKindOfLike;
+    $scope.getAllArtist = function() {
+      ourSvc.getAll();
+    };
 
 
      /// This is to the service
@@ -75,5 +76,3 @@ angular.module('angularService')
    //.3 #watchCollection is also a shallow
 
 });
-
-

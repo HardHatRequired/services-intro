@@ -2,8 +2,11 @@
 
 myApp.controller('FirstCtrl', function ($scope, ourSvc) {
 
-    $scope.reallyLike = ourSvc.reallyLike;
-    $scope.kindOfLike = ourSvc.kindOfLike;
+    // $scope.reallyLike = ourSvc.reallyLike;
+    // $scope.kindOfLike = ourSvc.kindOfLike;
+    $scope.getAllArtist = function() {
+      ourSvc.getAll();
+    }
 
     $scope.addArtist = function() {
         var user =  buildArtist();
@@ -25,5 +28,3 @@ myApp.controller('FirstCtrl', function ($scope, ourSvc) {
         $scope.score = '';
     }
 });
-
-

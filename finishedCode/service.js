@@ -1,8 +1,16 @@
 
 myApp.service('ourSvc', function() {
 
-    this.reallyLike = [];
-    this.kindOfLike = [];
+    this.getAll = fucntion($http) {
+      return $http.get('http://localhost:3000/artists')
+        .then(fucntion(response){
+          if(response.status === 200){
+            console.log(response.data);
+            return response.data;
+          }
+
+        })
+    };
 
     this.addNewArtist = function (artistObj) {
         console.log(artistObj);
